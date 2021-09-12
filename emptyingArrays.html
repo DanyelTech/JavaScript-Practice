@@ -1,0 +1,38 @@
+<!-- Date = 
+    2020-11-11
+Author: Danny
+-->
+<html>
+
+<head>
+    <script type="text/javascript">
+        {
+            let numbers = [1, 2, 3, 4, ];
+            let another = numbers;
+
+            //    Solution 1
+
+
+            //  Only works if there is no references to that array
+            numbers = [];
+
+
+            // Solution 2
+            // BEST METHOD
+            // numbers.length = 0;
+
+            // Solution 3
+            // numbers.splice(0, numbers.length);
+
+            // Solution 4 
+            // while (numbers.lengths > 0)
+            //     numbers.pop();
+
+
+            console.log(numbers);
+            console.log(another);
+        }
+    </script>
+</head>
+
+</html>

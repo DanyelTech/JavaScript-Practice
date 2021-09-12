@@ -1,0 +1,28 @@
+<!-- Date = 
+    2020-11-28
+Author: Danny
+-->
+<html>
+
+<head>
+    <script type="text/javascript">
+        {
+            const stealth = 'stealth';
+            const combat = 'combat';
+            const webslinging = 'webslinging'
+            const scenario = prompt('Enter your scenario');
+
+            if (scenario == 'infiltrating' || scenario == 'recon') {
+                document.write(stealth);
+            };
+            if (scenario == 'hostage rescue' || scenario == 'break-in' || scenario == 'robbery') {
+                document.write(combat);
+            };
+            if (scenario == 'waiting' || scenario == 'freestyling' || scenario == 'exploring') {
+                document.write(webslinging);
+            };
+        }
+    </script>
+</head>
+
+</html>

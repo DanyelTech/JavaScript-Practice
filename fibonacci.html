@@ -1,0 +1,34 @@
+<!-- Date = 
+    2020-10-20
+Author: Danny
+-->
+
+<html>
+
+<head>
+
+    <script type="text/javascript">
+        {
+            // Shows the fibonacci sequence only to the amount that you input
+            let pop = prompt("Enter the count of values in the series", " ");
+            let a = 0;
+            let b = 1;
+
+            for (let i = 0; i < pop; i++) {
+                document.write("", fibF(i), ", ");
+            }
+
+            function fibF(i) {
+                c = a + b;
+                b = a;
+                a = c;
+
+                return c;
+            }
+
+        }
+    </script>
+
+</head>
+
+</html>

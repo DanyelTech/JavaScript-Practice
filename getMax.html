@@ -1,0 +1,24 @@
+<!-- Date = 
+    2020-11-22
+Author: Danny
+-->
+<html>
+
+<head>
+    <script type="text/javascript">
+        {
+            const numbers = [1, 2, 3, 9, 4, 5];
+
+            const max = getMax(numbers);
+
+            console.log(max);
+
+            function getMax(array) {
+                if (array.length === 0) return undefined;
+                return array.reduce((a, b) => (a > b) ? a : b);
+            }
+        }
+    </script>
+</head>
+
+</html>

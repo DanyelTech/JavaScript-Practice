@@ -1,0 +1,67 @@
+<!-- Date = 
+    2020-10-18
+Author: Danny
+
+
+
+
+-->
+
+
+<html>
+
+<head>
+
+    <script type="text/javascript">
+        {
+
+            let number = 0;
+            // Number represents the limit which the user inputs for the fizzbuzz
+
+            number = prompt("enter the number which you would like to fizzbuzz", " ");
+            // here we take the input of the limit for the fizzbuzz
+            for (let i = 0; i <= number; i++) {
+                // here we set the loop so then we can write the functions logic all the way up to number or our limit
+
+                bizzfuzz(i);
+                // calling out function
+
+            }
+
+        }
+
+        function bizzfuzz(a) {
+            // here we are declaring the function for the call up top
+            let flag = false;
+            // The flag is here because we need it for the if logic to see if we can write fizz or buzz or no fizz buzzing
+
+
+            if ((a % 3) == 0) {
+                //  we are showing the math to the if which tells if the number is divisble by 3
+                document.write(a + ' Fizz <br>');
+                // if the condition is true write fizz  
+                flag = true;
+                //  If we can do the if, the function is true so we are saying that here
+            }
+
+            if ((a % 5) == 0) {
+                //  we are showing the logic to the if
+                document.write(a + ' Buzz <br>');
+                //  telling the if what to do 
+                flag = true;
+                //  If we can do the if the function is true so we are saying that here
+
+            }
+
+            if (flag == false) {
+                //  we are applying the logic that if the condition is meet 
+                document.write(a + ' No fizz buzzing <br>');
+                //  if condition is true write no fizz buzzing
+            }
+
+
+        }
+    </script>
+</head>
+
+</html>

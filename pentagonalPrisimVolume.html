@@ -1,0 +1,31 @@
+<!-- Date = 
+    2020-10-28
+Author: Danny
+-->
+
+<html>
+
+<head>
+
+    <script type="text/javascript">
+        {
+            let height = prompt('The height of the pentagonal pyramid');
+            let baseEdge = prompt('The base edge lenth of the pentagonal pyramid');
+
+            function pentagonal(height, baseEdge) {
+                // { 5/12·tan(54°)·4·32 ≈20.64573 - The formula I need to put into code
+
+                let volume = (5 / 12) * Math.tan(54 * Math.PI / 180) * height * (baseEdge * baseEdge);
+                return volume;
+
+            }
+            document.write(pentagonal(height, baseEdge));
+
+        }
+    </script>
+
+</head>
+
+
+
+</html>

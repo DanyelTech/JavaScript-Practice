@@ -1,0 +1,47 @@
+<!-- Date = 
+    2020-10-31
+Author: Danny
+-->
+
+<html>
+
+<head>
+
+    <script type="text/javascript">
+        {
+            let choice = prompt('Press 1 for an area of a parrallelogram. Press 2 for the volume of a pentagonal prisim');
+
+            if (choice == 1) {
+                let length = prompt('What is the length of the parrallelogram')
+                let height = prompt('What is the height of the parrallelogram')
+                document.write(areaParrela(length, height));
+
+            };
+
+            if (choice == 2) {
+                let height = prompt('The height of the pentagonal pyramid');
+                let baseEdge = prompt('The base edge lenth of the pentagonal pyramid');
+                document.write(pentagonal(height, baseEdge));
+
+            }
+
+            function areaParrela(l, h) {
+
+                let a = l * h;
+                return a;
+            }
+
+            function pentagonal(height, baseEdge) {
+                // { 5/12·tan(54°)·4·32 ≈20.64573
+
+                let volume = (5 / 12) * Math.tan(54 * Math.PI / 180) * height * (baseEdge * baseEdge);
+                return volume;
+
+            }
+
+        }
+    </script>
+
+</head>
+
+</html>

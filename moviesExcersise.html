@@ -1,0 +1,46 @@
+<!-- Date = 
+    2020-11-25
+Author: Danny
+-->
+<html>
+
+<head>
+    <script type="text/javascript">
+        {
+            const movies = [{
+                title: 'a',
+                year: 2018,
+                rating: 4.5
+            }, {
+                title: 'b',
+                year: 2018,
+                rating: 4.7
+            }, {
+                title: 'c',
+                year: 2018,
+                rating: 3
+            }, {
+                title: 'd',
+                year: 2017,
+                rating: 4.5
+            }, ];
+
+            // All the movies in 2018 with rating > 4
+            //  Sort them by their rating 
+            // Desending order
+            //  Pick their title
+
+            movies.sort(function(a, b, c, d) {
+                const years = a.year
+                if (a.year >= 2018) return a;
+                if (b.year >= 2018) return b;
+                if (c.year >= 2018) return c;
+                if (d.year >= 2018) return d;
+                return 0;
+                console.log(movies)
+            });
+        }
+    </script>
+</head>
+
+</html>
